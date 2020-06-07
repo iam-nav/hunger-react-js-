@@ -1,0 +1,50 @@
+body{
+    background-color: #F3DED6;
+    font-family: 'Fredoka One', cursive;
+}
+.ml6 {
+  margin-top: 3%;
+    position: relative;
+    font-weight: 900;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  .ml6 .text-wrapper {
+    position: relative;
+    display: inline-block;
+    padding-top: 0.2em;
+    padding-right: 0.05em;
+    padding-bottom: 0.1em;
+    overflow: hidden;
+  }
+  
+  .ml6 .letter {
+    display: inline-block;
+    line-height: 1em;
+  }
+  .backgroundbtn{
+      margin-left: 33%;
+      margin-top: 3.5%;
+
+      background-position: 0px center;
+      display: block;
+      width: 339px;
+      z-index: 999;
+      height: 100px;
+      background-repeat: no-repeat;
+      background-image: url('./images/playBtn-out-d1beff5a32.png');
+      background-size: contain;
+  }
+  .backgroundbtn:hover{
+      margin-left: 33%;
+      margin-top: 3.5%;
+      display: block;
+      width: 339px;
+      height: 100px;
+      background-position: 0px center;
+      display: block;
+      z-index: 999;
+      background-image: url('./images/nessskkk.png');
+    
+  }
