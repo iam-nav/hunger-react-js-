@@ -3,6 +3,7 @@ import React,{useEffect} from 'react'
 import logo from '../layouts/images/free_food.png'
 import './home.css'
 import anime from 'animejs'
+import { Link } from 'react-router-dom';
 
 
 export default function Home() {
@@ -26,21 +27,21 @@ export default function Home() {
 
     return (
         <div>
-<h1 class="ml6">
-  <span class="text-wrapper">
-    <span class="letters" style={{color:"#AC3B61",fontSize:"80px"}}>H U N G  R Y ?</span>
+<h1 className="ml6">
+  <span className="text-wrapper">
+    <span className="letters" style={{color:"#AC3B61",fontSize:"80px"}}>H U N G  R Y ?</span>
   </span>
 </h1>
 <h4 style={{textAlign:"center",fontSize:"2.2em",marginTop:"-20px",color:"#D57A99"}}>Lets Find Free Food <br />
                 around you
             </h4>
 <img src={logo} width="160px" style={{borderRadius:"50px",marginLeft:"43%",marginTop:"-30px"}}></img>
- <a href="">
+ <Link  to='/login'>
  <span style={{position:"absolute",left:"47%",top:"77.6%",color:"#AC3B61",fontSize:"22px"}}>Find Now</span>
  <div className="backgroundbtn">
      
  </div>
- </a>
+ </Link>
         </div>
     )
 }

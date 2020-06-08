@@ -26,7 +26,6 @@ body{
   .backgroundbtn{
       margin-left: 33%;
       margin-top: 3.5%;
-
       background-position: 0px center;
       display: block;
       width: 339px;
@@ -47,4 +46,20 @@ body{
       z-index: 999;
       background-image: url('./images/nessskkk.png');
     
+  }
+
+
+  .item-enter {
+    opacity: 0;
+  }
+  .item-enter-active {
+    opacity: 1;
+    transition: opacity 500ms ease-in;
+  }
+  .item-exit {
+    opacity: 1;
+  }
+  .item-exit-active {
+    opacity: 0;
+    transition: opacity 500ms ease-in;
   }
