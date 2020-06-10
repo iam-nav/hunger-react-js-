@@ -10,6 +10,7 @@ import Home from './components/layouts/home'
 import Register from './components/Register/newUser'
 import Login from './components/Register/login'
 import HomePage from './components/views/homePage'
+import Popup from './components/views/location/popup'
 
 
 const App= ()=>(
@@ -25,7 +26,7 @@ const App= ()=>(
     <Route path="/" exact component={Home} />
     <Route path="/login" component={Login} />
     <Route path="/register" component={Register}/>
-    <Route path="/home" component={HomePage}/> */}
+    <Route path="/home" component={Popup}/> */}
 </Switch>
 </CSSTransition>
 </TransitionGroup>)}></Route>
