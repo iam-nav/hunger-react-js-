@@ -1,0 +1,24 @@
+.message{
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-color: #ac3b61;
+    background: transparent;
+    color:#ac3b61;
+    font-family: 'Fredoka One', cursive;
+}
+.inp_Location{
+    outline-color: #ac3b61;
+    border-color: #ac3b61;
+    background: transparent;
+    color:#ac3b61;
+    font-family: 'Fredoka One', cursive;
+    outline-color: #ac3b61;
+}
+.message:focus{
+    outline: none;
+    border-top: hidden;
+    border-left: hidden;
+    border-right: hidden;
+    border-bottom: 2px solid #ac3b61 ;
+}

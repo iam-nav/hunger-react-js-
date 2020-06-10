@@ -9,6 +9,7 @@ import './components/layouts/home.css'
 import Home from './components/layouts/home'
 import Register from './components/Register/newUser'
 import Login from './components/Register/login'
+import HomePage from './components/views/homePage'
 
 
 const App= ()=>(
@@ -24,7 +25,7 @@ const App= ()=>(
     <Route path="/" exact component={Home} />
     <Route path="/login" component={Login} />
     <Route path="/register" component={Register}/>
-    {/* <Route path="/join" component={joinRoom}/> */} */}
+    <Route path="/home" component={HomePage}/> */}
 </Switch>
 </CSSTransition>
 </TransitionGroup>)}></Route>
