@@ -26,7 +26,7 @@ const App= ()=>(
     <Route path="/" exact component={Home} />
     <Route path="/login" component={Login} />
     <Route path="/register" component={Register}/>
-    <Route path="/home" component={Popup}/> */}
+    <Route path="/home" component={Popup}/>
 </Switch>
 </CSSTransition>
 </TransitionGroup>)}></Route>
