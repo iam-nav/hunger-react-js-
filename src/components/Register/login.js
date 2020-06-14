@@ -1,5 +1,6 @@
 import React,{useState} from 'react'
 import './login.css'
+import axios from 'axios'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser,faLock } from '@fortawesome/free-solid-svg-icons'
 import logo from '../layouts/images/free_food.png'
@@ -17,7 +18,16 @@ const pass=(event)=>{
 }
 
 const login_user = ()=>{
-    console.log('username'+username,'password'+password)
+    axios({
+        method: 'post',
+        url: 'localhost:3000/check',
+        data: {
+          email:username,
+          password:password,
+        }
+      }).then((response)=>{
+          console.log(response.data)
+}).catch((e)=>console.log(e))
 }
 
 
