@@ -13,6 +13,10 @@ constructor(props) {
   }
 }
 
+componentWillMount(){
+  
+}
+
 editLocation=()=>{
   this.setState({
    editLocation:true 
