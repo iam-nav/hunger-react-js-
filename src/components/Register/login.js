@@ -38,7 +38,7 @@ const AxiosPost = ()=>{
         }
       }).then((response)=>{
         Cookies.set('user',response.data.token)
-        window.location.reload(true)
+        window.location.href ="/"
       }).catch((e)=>{
           setvisible(true)
           seterrorMsg(e.response.data)})

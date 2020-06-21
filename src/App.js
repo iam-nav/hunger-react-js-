@@ -9,17 +9,17 @@ import './components/layouts/home.css'
 import Home from './components/layouts/home'
 import Register from './components/Register/newUser'
 import Login from './components/Register/login'
-import HomePage from './components/views/homePage'
+import HomePage, { homePage } from './components/views/homePage'
 import axios from 'axios'
 import Cookies from 'js-cookie'
 import Popup from './components/views/location/popup'
 import Check from './components/views/googleMap/check'
+import Map from './components/views/googleMap/map'
 
 
 const App= ()=>{  
     const [visible, setvisible] = useState(true);
     const [name,setname]=useState('');
-
     useEffect(() => {
     checkUserLoged()
     },[]);
@@ -48,11 +48,11 @@ const checkUserLoged=()=>{
     classNames="item"
 >
 <Switch location={location}>
-    <Route path="/" exact component={()=>visible?<Home />:<Popup name={name} />} /> 
+    <Route path="/" exact component={()=>visible?<Home />:<Map name={name}></Map>} /> 
     {/* <Route path="/" exact component={visible?Home:Popup} />  */}
     <Route path="/login" component={Login} />
     <Route path="/register" component={Register}/>
-    <Route path="/home" component={Check}/>
+    <Route path="/home" component={Map}/>
 </Switch>
 </CSSTransition>
 </TransitionGroup>)}></Route>
